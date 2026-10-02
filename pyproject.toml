@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yatmo"
+version = "1.0.0"
+description = "Real estate maps, points of interest and neighbourhood data: the official Python client for the Yatmo API (neighbourhood text as HTML for SEO, nearest places with travel times, scores, listing enrichment, isochrones, routes, geocoding, static maps). Zero dependency."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "Yatmo", email = "support@yatmo.com" }]
+keywords = ["yatmo", "real-estate", "proptech", "map", "poi", "points-of-interest", "neighbourhood", "property", "listing", "isochrone", "geocoding", "seo"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Scientific/Engineering :: GIS",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://yatmo.com"
+Documentation = "https://documentation.yatmo.com/api"
+Source = "https://github.com/Yatmo/yatmo-python"
+Issues = "https://github.com/Yatmo/yatmo-python/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+yatmo = ["py.typed"]
